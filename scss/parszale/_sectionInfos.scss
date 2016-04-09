@@ -1,0 +1,118 @@
+.inf {
+  height: 1050px;
+  width: auto;
+  background: $backgroundInfosNumbers;
+  .infos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    .container {
+      text-align: center;
+      margin: 0 auto;
+      margin-top: 15px;
+      font-family: 'Lato', sans-serif;
+      font-size: 16px;
+    }
+    @media( min-width: 400px) {
+      .container {
+        width: 50%;
+      }
+    }
+    @media( min-width: 750px) {
+      .container {
+        width: 25%;
+        margin-top: 50px;
+      }
+    }
+    p {
+      padding: 15px 15px 0 15px;
+      font-family: 'Lato', sans-serif;
+    }
+    .title {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    [class*='infos_box-'] {
+      height: 129px;
+      width: 126px;
+      margin: 0 auto;
+      color: $backgroundColorNav;
+      display: block;
+      content: "";
+      height: 119px;
+      width: 124px;
+      margin: 0 auto;
+      position: relative;
+      background-image: url(../img/icons-sprite.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      &:hover {
+        background-image: url(../img/icons-sprite-hover.png);
+      }
+    }
+    @media (min-width: 750px) {
+      [class*='infos_box-'] {
+        height: 150px;
+        width: 150px;
+      }
+    }
+    .infos_box-1 {
+      &:hover {
+        background-image: url(../img/icons-sprite-hover.png);
+      }
+    }
+    @media (min-width: 750px) {
+      .infos_box-1 {
+        background-position: 0 -6px;
+      }
+    }
+    .infos_box-2 {
+      background-position: 0 -126px;
+    }
+    @media (min-width: 750px) {
+      .infos_box-2 {
+        background-position: 0 -156px;
+      }
+    }
+    .infos_box-3 {
+      background-position: 0 -249px;
+    }
+    @media (min-width: 750px) {
+      .infos_box-3 {
+        background-position: 0 -305px;
+      }
+    }
+    .infos_box-4 {
+      background-position: 0 -372px;
+    }
+    @media (min-width: 750px) {
+      .infos_box-4 {
+        background-position: 0 -455px;
+      }
+    }
+  }
+  @media(min-width: 750px) {
+    .infos {
+      margin: 0 50px;
+    }
+  }
+
+  @media(min-width: 1200px) {
+    .infos {
+      margin: 0 230px;
+    }
+  }
+}
+@media(min-width: 400px) {
+  .inf {
+    height: 600px;
+  }
+}
+
+@media(min-width: 750px) {
+  .inf {
+    height: 500px;
+   
+  }
+}

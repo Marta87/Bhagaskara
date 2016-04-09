@@ -1,0 +1,77 @@
+nav {
+  height: 50px;
+  width: auto;
+  padding: 10px 0;
+  font-family: "existencelight";
+  background: $backgroundColorNav;
+  .sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    height: 50px;
+  width: 100%;
+    padding: 10px 0;
+    background: $backgroundColorNav;
+  }
+  .bhagaskara {
+    font-family: "existencelight";
+    padding: 0 10px;
+    text-align: left;
+    span {
+      color: $KaraColor;
+    }
+  }
+  @media( min-width: 580px) {
+    .bhagaskara_menu {
+      display: none;
+    }
+  }
+  .logo {
+    display: none;
+    span {
+      color: $KaraColor;
+    }
+  }
+  @media( min-width: 580px) {
+    .logo {
+      display: inline-block;
+      font-family: "existencelight";
+      padding: 8px 10px;
+      text-align: left;
+      font-size: 20px;
+    }
+  }
+  @media( min-width: 1000px) {
+    .logo {
+      margin-left: 20%
+    }
+  }
+  ul {
+    display: none;
+    list-style: 3%;
+  }
+  @media( min-width: 580px) {
+    ul {
+      display: inline-block;
+      float: right;
+      text-align: center;
+      padding: 8px 10px;
+      font-size: 18px;
+    }
+  }
+  @media( min-width: 634px) {
+    ul {
+      margin-right: 10%;
+    }
+  }
+  ul li {
+    display: inline-block;
+    padding: 2px 5px;
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    &:hover {
+      color: $KaraColor;
+    }
+  }
+}

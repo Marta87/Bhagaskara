@@ -1,0 +1,153 @@
+.contact {
+  height: auto;
+  margin-top: 40px;
+  .section-header {
+    @extend %variabels;
+    font-family: "existencelight";
+    font-size: 18px;
+    margin: 40px 0;
+    h2 {
+      font-size: 40px;
+      span {
+        color: $KaraColor;
+      }
+    }
+  }
+  form {
+    height: 280px;
+    text-align: center;
+    input {
+      width: 294px;
+      margin: 10px 0;
+    } 
+    @media(min-width: 1000px){
+    input{
+      height: 35px;
+      width: 350px;
+     
+      
+    }
+  }
+    textarea {
+      margin: 10px 0;
+    }
+    @media(min-width: 1000px){
+    textarea{
+    
+      width: 350px;
+     
+      
+    }
+  }
+  }
+  @media(min-width: 590px){
+    form{
+      width:300px;
+      float:left;
+      margin: 0 10px;
+    }
+  }
+  @media(min-width: 1000px){
+    form{
+      width:400px;
+     
+    }
+  }
+  .text {
+    height: auto;
+    width: 80%;
+    font-family: 'Lato', sans-serif;
+    margin: 0 auto;
+    text-align: center;
+    &:last-child {
+      weight: bold;
+    }
+    p {
+      padding: 10px;
+    }
+  }
+ 
+  .button{
+    @extend %button;
+    margin-top: 10px;
+    p {
+      text-align: center;
+      padding: 15px 0;
+    }
+  }
+  .social_media{
+   text-align: center;
+    margin-top: 10px;
+  }
+  .fb {
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+      background: url(../img/fb.jpg) no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  @media(min-width: 900px){
+    .fb{
+      height: 50px;
+      width: 50px;
+     ;
+    }
+  }
+  .tumb{
+    display: inline-block;
+      width: 25px;
+      height: 25px;
+      background: url(../img/tumb.jpg) no-repeat;
+      background-size: cover;
+      background-position: center;
+  }@media(min-width: 900px){
+    .tumb{
+      height: 50px;
+      width: 50px;
+     ;
+    }
+  }
+    .google {
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+      background: url(../img/google.jpg) no-repeat;
+      background-size: cover;
+      background-position: center;
+
+    }
+  @media(min-width: 900px){
+    .google{
+      height: 50px;
+      width: 50px;
+     ;
+    }
+  }
+ @media(min-width: 590px){
+    .form{
+      width: 100%;
+      margin:0 auto;
+      text-align: center;
+    }
+  }
+   @media(min-width: 800px){
+    .form{
+      width: 80%;
+    
+    }
+  }
+   
+   @media(min-width: 1100px){
+    .form{
+      width: 60%;
+      margin:0 auto;
+      text-align: center;
+    }
+  }
+}
+@media(min-width: 590px ){
+  .contact{
+    height: 400px;
+  }
+}

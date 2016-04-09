@@ -1,0 +1,115 @@
+.team {
+  height: 450px;
+  .section-header {
+    @extend %variabels;
+    font-family: "existencelight";
+    font-size: 18px;
+    margin: 40px 0;
+    h2 {
+      font-size: 40px;
+      span {
+        color: $KaraColor;
+      }
+    }
+  }
+  .arr{
+    margin: 0 auto;
+    width: 100px;
+  }
+  .arr_l {
+    display: inline-block;
+    width: 43px;
+    height: 46px;
+    background: url(../img/arr-l.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .arr_r {
+    display: inline-block;
+    width: 43px;
+    height: 46px;
+    background: url(../img/arr-r.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .window{
+    overflow: hidden;
+    width: 115px;
+    margin: 0 auto;
+  }
+  @media(min-width:800px){
+    .window{
+      width: 200px;
+    }
+  }
+  
+  .team_gallery {
+    //width: 2000px;
+    position: relative;
+    display:inline-block;
+    transition: all .5s ease-in-out;
+  }
+  .team_gallery li {
+    width:115px;
+    display:inline-block;
+  }
+   @media(min-width:800px){
+    .team_gallery li{
+      width: 200px;
+     
+    }
+  }
+  .circle {
+    height: 100px;
+    width: 100px;
+    margin: 50px auto;
+    border-radius: 50%;
+  }
+  .foto{
+    height: 100px;
+    width: 100px;
+    margin: 50px auto;
+    border-radius: 50%;
+  }
+   @media(min-width:800px){
+    .foto{
+      height: 200px;
+      width: 200px;
+    }
+  }
+  .name_box {
+    margin: 0 auto;
+    padding: 5px;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+  }
+  .name {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    p {
+      font-size: 14px;
+    }
+  }
+  .social_media {
+    text-align: center;
+  }
+  .fb {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: url(../img/fb.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    ;
+  }
+  .google {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: url(../img/google.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    ;
+  }
+}

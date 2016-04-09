@@ -1,0 +1,99 @@
+.portfolio {
+  height: auto;
+  margin: 20px 0;
+  .section-header {
+    @extend %variabels;
+    font-family: "existencelight";
+    font-size: 18px;
+    margin: 40px 0;
+    h2 {
+      font-size: 40px;
+      span {
+        color: $KaraColor;
+      }
+    }
+  }
+  .portfolio_menu {
+    text-align: center;
+    margin-bottom: 10px;
+    li {
+      height: 20px;
+      width: 60px;
+      display: inline-block;
+      border: 1px solid $textColor;
+      padding: 3px 3px;
+      font-size: 10px;
+      font-family: 'Lato', sans-serif;
+      margin: auto;
+      margin-top: 5px;
+      border-radius: 3px;
+      &:hover {
+        background: $KaraColor;
+        color: $backgroundColorNav;
+      }
+    }
+  }
+  .gallery {
+    width: 80%;
+    @extend %flex_row;
+    flex-wrap: wrap;
+    justify-content: center;
+    li {
+      height: auto;
+      padding: 15px;
+      flex: 0 0 50%
+    }
+  }
+  @media(min-width: 700px) {
+    .gallery {
+      width: 90%
+    }
+  }
+  @media(min-width: 800px) {
+    .gallery {
+      width: 80%
+    }
+  }
+  @media(min-width: 800px) {
+    .gallery {
+      width: 70%
+    }
+  }
+  @media(min-width: 1000px) {
+    .gallery {
+      width: 60%
+    }
+  }
+  @media(min-width: 1200px) {
+    .gallery {
+      width: 50%
+    }
+  }
+  @media(min-width: 700px) {
+    .gallery li {
+      flex: 0 0 33.33%;
+    }
+  }
+  //     @media(min-width: 700px){
+  //    .gallery li{
+  //      height: 200px;
+  //    }
+  //  }
+  .gallery_img {
+    height: auto;
+    max-width: 100%;
+  }
+  @media(min-width: 700px) {
+    .gallery_img {
+      height: 200px;
+    }
+  }
+  .button {
+    @extend %button;
+    margin-top: 30px;
+    p {
+      text-align: center;
+      padding: 15px 0;
+    }
+  }
+}

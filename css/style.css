@@ -1,0 +1,856 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+*, *:after, *:before {
+  box-sizing: border-box; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.about .section-header, .team .section-header, .skills .section-header, .portfolio .section-header, .contact .section-header {
+  text-align: center;
+  padding: 10px; }
+  .about .section-header h2, .team .section-header h2, .skills .section-header h2, .portfolio .section-header h2, .contact .section-header h2 {
+    display: inline-block;
+    position: relative;
+    padding: 10px; }
+    .about .section-header h2::before, .team .section-header h2::before, .skills .section-header h2::before, .portfolio .section-header h2::before, .contact .section-header h2::before, .about .section-header h2::after, .team .section-header h2::after, .skills .section-header h2::after, .portfolio .section-header h2::after, .contact .section-header h2::after {
+      border: solid #a6429a;
+      content: "";
+      display: block;
+      height: 20px;
+      width: 20px;
+      position: absolute; }
+    .about .section-header h2::before, .team .section-header h2::before, .skills .section-header h2::before, .portfolio .section-header h2::before, .contact .section-header h2::before {
+      bottom: 0;
+      border-width: 0 0 2px 2px;
+      left: 0; }
+    .about .section-header h2::after, .team .section-header h2::after, .skills .section-header h2::after, .portfolio .section-header h2::after, .contact .section-header h2::after {
+      border-width: 2px 2px 0 0;
+      right: 0;
+      top: 0; }
+
+.backgroundImg .header_flex_box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.backgroundImg {
+  height: 280px;
+  width: auto; }
+
+.portfolio .gallery {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto; }
+
+.about .button, .portfolio .button, .contact .button {
+  height: 50px;
+  width: 140px;
+  background: #a6429a;
+  border-radius: 4%;
+  color: #fff;
+  margin: 0 auto; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  font-size: 100%;
+  margin: 0; }
+
+@font-face {
+  font-family: "existencelight";
+  src: local("existencelight"), url("../font/existence-light.woff") format("woff"); }
+.header h2 {
+  margin: 0 auto;
+  max-width: 90%; }
+
+.header {
+  min-height: 100vh;
+  height: auto;
+  width: auto;
+  background: url(../img/hero-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center; }
+  .header .information {
+    text-align: center; }
+  .header .bhagaskara {
+    margin: 0 auto;
+    font-family: "existencelight";
+    color: #fff;
+    font-size: 3.5em;
+    padding-top: 20px; }
+    .header .bhagaskara span {
+      color: #a6429a; }
+  @media (min-width: 780px) {
+    .header .bhagaskara {
+      font-size: 5em;
+      padding-top: 60px; } }
+  .header h1 {
+    position: relative;
+    padding-top: 30px;
+    font-family: "existencelight";
+    font-size: 2em;
+    color: #fff; }
+  @media (min-width: 780px) {
+    .header h1 {
+      font-size: 2.6em;
+      margin-top: -35px;
+      margin-bottom: -15px; } }
+  .header h2 {
+    display: none;
+    padding-top: 30px;
+    text-align: center;
+    font-family: "existencelight";
+    font-size: 1em;
+    color: #fff; }
+  @media (min-width: 430px) {
+    .header h2 {
+      display: inline-block; } }
+  .header .header_flex_box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 70px; }
+  .header .frame {
+    height: 130px;
+    width: 130px;
+    background-image: url(../img/bha.png);
+    background-repeat: no-repeat;
+    background-size: cover; }
+    .header .frame:hover {
+      background-image: url(../img/portbg.png); }
+  @media (min-width: 900px) {
+    .header .frame {
+      height: 150px;
+      width: 150px; } }
+  .header [class*='box-'] {
+    display: block;
+    height: 120px;
+    width: 120px;
+    margin: 0 auto;
+    color: #fff; }
+    .header [class*='box-']:link {
+      text-decoration: none; }
+    .header [class*='box-']:before {
+      display: block;
+      content: "";
+      height: 39px;
+      width: 37px;
+      margin: 0 auto;
+      position: relative;
+      top: 23%;
+      background-image: url(../img/icons-menu2.png);
+      background-repeat: no-repeat;
+      background-size: cover; }
+    @media (min-width: 900px) {
+      .header [class*='box-']:before {
+        top: 29%; } }
+    .header [class*='box-'] p {
+      display: block;
+      position: relative;
+      top: 18%;
+      margin: 12px 0;
+      text-align: center; }
+    @media (min-width: 900px) {
+      .header [class*='box-'] p {
+        margin: 25px 0;
+        font-size: 18px; } }
+  .header .box-2:before {
+    background-position: 0 -36px; }
+  .header .box-3:before {
+    background-position: 0 -71px; }
+  .header .box-4:before {
+    background-position: 0 -106px; }
+  .header .box-5:before {
+    background-position: 0 -142px; }
+  .header .box-6:before {
+    background-position: 0 -180px; }
+  .header #down {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 54px;
+    width: 50px;
+    background-image: url(../img/arr2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    margin-top: -13px; }
+  @media (min-width: 390px) {
+    .header #down {
+      margin-top: 20px; } }
+  @media (min-width: 780px) {
+    .header .section_down {
+      margin-top: 170px; } }
+
+nav {
+  height: 50px;
+  width: auto;
+  padding: 10px 0;
+  font-family: "existencelight";
+  background: #fff; }
+  nav .sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    height: 50px;
+    width: 100%;
+    padding: 10px 0;
+    background: #fff; }
+  nav .bhagaskara {
+    font-family: "existencelight";
+    padding: 0 10px;
+    text-align: left; }
+    nav .bhagaskara span {
+      color: #a6429a; }
+  @media (min-width: 580px) {
+    nav .bhagaskara_menu {
+      display: none; } }
+  nav .logo {
+    display: none; }
+    nav .logo span {
+      color: #a6429a; }
+  @media (min-width: 580px) {
+    nav .logo {
+      display: inline-block;
+      font-family: "existencelight";
+      padding: 8px 10px;
+      text-align: left;
+      font-size: 20px; } }
+  @media (min-width: 1000px) {
+    nav .logo {
+      margin-left: 20%; } }
+  nav ul {
+    display: none;
+    list-style: 3%; }
+  @media (min-width: 580px) {
+    nav ul {
+      display: inline-block;
+      float: right;
+      text-align: center;
+      padding: 8px 10px;
+      font-size: 18px; } }
+  @media (min-width: 634px) {
+    nav ul {
+      margin-right: 10%; } }
+  nav ul li {
+    display: inline-block;
+    padding: 2px 5px;
+    font-family: 'Lato', sans-serif;
+    font-size: 12px; }
+    nav ul li:hover {
+      color: #a6429a; }
+
+.inf {
+  height: 1050px;
+  width: auto;
+  background: #eee; }
+  .inf .infos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .inf .infos .container {
+      text-align: center;
+      margin: 0 auto;
+      margin-top: 15px;
+      font-family: 'Lato', sans-serif;
+      font-size: 16px; }
+    @media (min-width: 400px) {
+      .inf .infos .container {
+        width: 50%; } }
+    @media (min-width: 750px) {
+      .inf .infos .container {
+        width: 25%;
+        margin-top: 50px; } }
+    .inf .infos p {
+      padding: 15px 15px 0 15px;
+      font-family: 'Lato', sans-serif; }
+    .inf .infos .title {
+      font-size: 18px;
+      font-weight: bold; }
+    .inf .infos [class*='infos_box-'] {
+      height: 129px;
+      width: 126px;
+      margin: 0 auto;
+      color: #fff;
+      display: block;
+      content: "";
+      height: 119px;
+      width: 124px;
+      margin: 0 auto;
+      position: relative;
+      background-image: url(../img/icons-sprite.png);
+      background-repeat: no-repeat;
+      background-size: cover; }
+      .inf .infos [class*='infos_box-']:hover {
+        background-image: url(../img/icons-sprite-hover.png); }
+    @media (min-width: 750px) {
+      .inf .infos [class*='infos_box-'] {
+        height: 150px;
+        width: 150px; } }
+    .inf .infos .infos_box-1:hover {
+      background-image: url(../img/icons-sprite-hover.png); }
+    @media (min-width: 750px) {
+      .inf .infos .infos_box-1 {
+        background-position: 0 -6px; } }
+    .inf .infos .infos_box-2 {
+      background-position: 0 -126px; }
+    @media (min-width: 750px) {
+      .inf .infos .infos_box-2 {
+        background-position: 0 -156px; } }
+    .inf .infos .infos_box-3 {
+      background-position: 0 -249px; }
+    @media (min-width: 750px) {
+      .inf .infos .infos_box-3 {
+        background-position: 0 -305px; } }
+    .inf .infos .infos_box-4 {
+      background-position: 0 -372px; }
+    @media (min-width: 750px) {
+      .inf .infos .infos_box-4 {
+        background-position: 0 -455px; } }
+  @media (min-width: 750px) {
+    .inf .infos {
+      margin: 0 50px; } }
+  @media (min-width: 1200px) {
+    .inf .infos {
+      margin: 0 230px; } }
+
+@media (min-width: 400px) {
+  .inf {
+    height: 600px; } }
+@media (min-width: 750px) {
+  .inf {
+    height: 500px; } }
+.about {
+  height: 500px;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center; }
+  .about .bhagaskara {
+    font-family: "existencelight";
+    font-size: 18px;
+    margin: 0 auto; }
+  .about .section-header h2 {
+    font-size: 40px;
+    margin-top: 20px; }
+  .about .about_text {
+    height: 150px;
+    width: 230px;
+    padding-top: 30px;
+    text-align: justify;
+    font-family: 'Lato', sans-serif; }
+  @media (min-width: 750px) {
+    .about .about_text {
+      display: inline-block;
+      margin-top: -40px;
+      margin-left: 340px; } }
+  @media (min-width: 1100px) {
+    .about .about_text {
+      font-size: 16px;
+      margin-left: 640px;
+      margin-top: -145px; } }
+  .about span {
+    color: #a6429a; }
+  .about img {
+    height: 150px;
+    width: 230px;
+    margin-top: 40px; }
+  @media (min-width: 500px) {
+    .about img {
+      height: 200px;
+      width: 300px; } }
+  @media (min-width: 750px) {
+    .about img {
+      height: 250px;
+      width: 350px; } }
+  @media (min-width: 1100px) {
+    .about img {
+      height: 350px;
+      width: 500px;
+      margin-left: 80px; } }
+  @media (min-width: 750px) {
+    .about .about_img {
+      height: 150px;
+      width: 230px;
+      display: inline-block;
+      float: left;
+      margin-left: -45%; } }
+  .about .button {
+    margin-top: 25px;
+    text-align: center; }
+    .about .button p {
+      padding-top: 14px; }
+  @media (min-width: 750px) {
+    .about .button {
+      margin-top: 16px;
+      margin-right: 50px; } }
+  @media (min-width: 1100px) {
+    .about .button {
+      margin-top: 220px; } }
+
+@media (min-width: 500px) {
+  .about {
+    height: 580px; } }
+.backgroundImg {
+  background: url(../img/section-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center; }
+  .backgroundImg .box-7 {
+    background: url(../img/icoEdu.png) no-repeat;
+    padding-top: 170px;
+    padding-bottom: 10px;
+    margin: 0 10px;
+    margin-top: 25px;
+    background-position: center;
+    text-align: center; }
+    .backgroundImg .box-7 span {
+      font-family: 'Lato', sans-serif;
+      font-size: 15px;
+      color: #fff; }
+
+.team {
+  height: 450px; }
+  .team .section-header {
+    font-family: "existencelight";
+    font-size: 18px;
+    margin: 40px 0; }
+    .team .section-header h2 {
+      font-size: 40px; }
+      .team .section-header h2 span {
+        color: #a6429a; }
+  .team .arr {
+    margin: 0 auto;
+    width: 100px; }
+  .team .arr_l {
+    display: inline-block;
+    width: 43px;
+    height: 46px;
+    background: url(../img/arr-l.png) no-repeat;
+    background-size: cover;
+    background-position: center; }
+  .team .arr_r {
+    display: inline-block;
+    width: 43px;
+    height: 46px;
+    background: url(../img/arr-r.png) no-repeat;
+    background-size: cover;
+    background-position: center; }
+  .team .window {
+    overflow: hidden;
+    width: 115px;
+    margin: 0 auto; }
+  @media (min-width: 800px) {
+    .team .window {
+      width: 200px; } }
+  .team .team_gallery {
+    position: relative;
+    display: inline-block;
+    transition: all .5s ease-in-out; }
+  .team .team_gallery li {
+    width: 115px;
+    display: inline-block; }
+  @media (min-width: 800px) {
+    .team .team_gallery li {
+      width: 200px; } }
+  .team .circle {
+    height: 100px;
+    width: 100px;
+    margin: 50px auto;
+    border-radius: 50%; }
+  .team .foto {
+    height: 100px;
+    width: 100px;
+    margin: 50px auto;
+    border-radius: 50%; }
+  @media (min-width: 800px) {
+    .team .foto {
+      height: 200px;
+      width: 200px; } }
+  .team .name_box {
+    margin: 0 auto;
+    padding: 5px;
+    font-family: 'Lato', sans-serif;
+    text-align: center; }
+  .team .name {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold; }
+    .team .name p {
+      font-size: 14px; }
+  .team .social_media {
+    text-align: center; }
+  .team .fb {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: url(../img/fb.jpg) no-repeat;
+    background-size: cover;
+    background-position: center; }
+  .team .google {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: url(../img/google.jpg) no-repeat;
+    background-size: cover;
+    background-position: center; }
+
+.skills {
+  height: 400px;
+  margin-top: 100px; }
+  .skills .section-header {
+    font-family: "existencelight";
+    font-size: 18px;
+    margin: 55px 0;
+    text-align: center; }
+    .skills .section-header h2 {
+      font-size: 40px; }
+      .skills .section-header h2 span {
+        color: #a6429a; }
+  .skills .ability {
+    width: auto;
+    height: 45px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 10px 0;
+    text-align: center; }
+  @media (min-width: 800px) {
+    .skills .ability {
+      margin: 15px 40px; } }
+  .skills [class*="procent_"] {
+    width: 10px;
+    color: #cdcdcd;
+    text-align: right; }
+  .skills .ability_color {
+    margin: 9px auto;
+    height: 15px;
+    width: 200px;
+    background: #cdcdcd; }
+    .skills .ability_color [class*='procent-'] {
+      background: #a6429a;
+      height: 15px; }
+  .skills .procent_1 {
+    padding-left: 76px; }
+  .skills .procent_2 {
+    padding-left: 45px; }
+  .skills .procent_3 {
+    padding-left: 93px; }
+  .skills .procent_4 {
+    padding-left: 121px; }
+  .skills .procent-1 {
+    width: 180px; }
+  .skills .procent-2 {
+    width: 140px; }
+  .skills .procent-3 {
+    width: 155px; }
+  .skills .procent-4 {
+    width: 175px; }
+  @media (min-width: 800px) {
+    .skills .flex_on_800px {
+      display: flex;
+      flex-direction: row;
+      margin: 0 auto;
+      justify-content: center; } }
+
+.backgroundImg {
+  background: url(../img/section-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center; }
+  .backgroundImg .box-8 {
+    background: url(../img/icoMsg.png) no-repeat;
+    padding-top: 170px;
+    padding-bottom: 10px;
+    background-position: center;
+    text-align: center; }
+    .backgroundImg .box-8 span {
+      font-family: 'Lato', sans-serif;
+      font-size: 15px;
+      color: #fff; }
+
+.numbers {
+  height: 500px;
+  width: auto;
+  padding: 15px 0;
+  background: #eee; }
+  .numbers .digits_caption {
+    margin-bottom: 25px; }
+  @media (min-width: 800px) {
+    .numbers .digits_caption {
+      display: flex;
+      flex-direction: row;
+      margin: 0 auto;
+      justify-content: center;
+      margin-top: 50px; } }
+  .numbers .digits {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    color: #000;
+    padding-top: 25px; }
+  @media (min-width: 800px) {
+    .numbers .digits {
+      font-size: 40px;
+      margin: 0 50px; } }
+  .numbers .caption {
+    font-size: 10px;
+    text-align: center;
+    padding-top: 5px;
+    color: #aaa; }
+  @media (min-width: 800px) {
+    .numbers .caption {
+      font-size: 16px; } }
+  .numbers .circel_mini {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background: #aaa;
+    margin-top: 25px;
+    margin: 0 auto; }
+  @media (min-width: 800px) {
+    .numbers .circel_mini {
+      height: 140px;
+      width: 140px;
+      margin-top: 50px; } }
+  .numbers .circle_caption {
+    width: 150px;
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 13px;
+    color: #aaa; }
+  .numbers .circle_caption2 {
+    width: 150px;
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 9px; }
+
+.portfolio {
+  height: auto;
+  margin: 20px 0; }
+  .portfolio .section-header {
+    font-family: "existencelight";
+    font-size: 18px;
+    margin: 40px 0; }
+    .portfolio .section-header h2 {
+      font-size: 40px; }
+      .portfolio .section-header h2 span {
+        color: #a6429a; }
+  .portfolio .portfolio_menu {
+    text-align: center;
+    margin-bottom: 10px; }
+    .portfolio .portfolio_menu li {
+      height: 20px;
+      width: 60px;
+      display: inline-block;
+      border: 1px solid #000;
+      padding: 3px 3px;
+      font-size: 10px;
+      font-family: 'Lato', sans-serif;
+      margin: auto;
+      margin-top: 5px;
+      border-radius: 3px; }
+      .portfolio .portfolio_menu li:hover {
+        background: #a6429a;
+        color: #fff; }
+  .portfolio .gallery {
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .portfolio .gallery li {
+      height: auto;
+      padding: 15px;
+      flex: 0 0 50%; }
+  @media (min-width: 700px) {
+    .portfolio .gallery {
+      width: 90%; } }
+  @media (min-width: 800px) {
+    .portfolio .gallery {
+      width: 80%; } }
+  @media (min-width: 800px) {
+    .portfolio .gallery {
+      width: 70%; } }
+  @media (min-width: 1000px) {
+    .portfolio .gallery {
+      width: 60%; } }
+  @media (min-width: 1200px) {
+    .portfolio .gallery {
+      width: 50%; } }
+  @media (min-width: 700px) {
+    .portfolio .gallery li {
+      flex: 0 0 33.33%; } }
+  .portfolio .gallery_img {
+    height: auto;
+    max-width: 100%; }
+  @media (min-width: 700px) {
+    .portfolio .gallery_img {
+      height: 200px; } }
+  .portfolio .button {
+    margin-top: 30px; }
+    .portfolio .button p {
+      text-align: center;
+      padding: 15px 0; }
+
+.contact {
+  height: auto;
+  margin-top: 40px; }
+  .contact .section-header {
+    font-family: "existencelight";
+    font-size: 18px;
+    margin: 40px 0; }
+    .contact .section-header h2 {
+      font-size: 40px; }
+      .contact .section-header h2 span {
+        color: #a6429a; }
+  .contact form {
+    height: 280px;
+    text-align: center; }
+    .contact form input {
+      width: 294px;
+      margin: 10px 0; }
+    @media (min-width: 1000px) {
+      .contact form input {
+        height: 35px;
+        width: 350px; } }
+    .contact form textarea {
+      margin: 10px 0; }
+    @media (min-width: 1000px) {
+      .contact form textarea {
+        width: 350px; } }
+  @media (min-width: 590px) {
+    .contact form {
+      width: 300px;
+      float: left;
+      margin: 0 10px; } }
+  @media (min-width: 1000px) {
+    .contact form {
+      width: 400px; } }
+  .contact .text {
+    height: auto;
+    width: 80%;
+    font-family: 'Lato', sans-serif;
+    margin: 0 auto;
+    text-align: center; }
+    .contact .text:last-child {
+      weight: bold; }
+    .contact .text p {
+      padding: 10px; }
+  .contact .button {
+    margin-top: 10px; }
+    .contact .button p {
+      text-align: center;
+      padding: 15px 0; }
+  .contact .social_media {
+    text-align: center;
+    margin-top: 10px; }
+  .contact .fb {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: url(../img/fb.jpg) no-repeat;
+    background-size: cover;
+    background-position: center; }
+  @media (min-width: 900px) {
+    .contact .fb {
+      height: 50px;
+      width: 50px; } }
+  .contact .tumb {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: url(../img/tumb.jpg) no-repeat;
+    background-size: cover;
+    background-position: center; }
+  @media (min-width: 900px) {
+    .contact .tumb {
+      height: 50px;
+      width: 50px; } }
+  .contact .google {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: url(../img/google.jpg) no-repeat;
+    background-size: cover;
+    background-position: center; }
+  @media (min-width: 900px) {
+    .contact .google {
+      height: 50px;
+      width: 50px; } }
+  @media (min-width: 590px) {
+    .contact .form {
+      width: 100%;
+      margin: 0 auto;
+      text-align: center; } }
+  @media (min-width: 800px) {
+    .contact .form {
+      width: 80%; } }
+  @media (min-width: 1100px) {
+    .contact .form {
+      width: 60%;
+      margin: 0 auto;
+      text-align: center; } }
+
+@media (min-width: 590px) {
+  .contact {
+    height: 400px; } }
+.bhagaskara {
+  margin-top: 20px;
+  font-family: "existencelight";
+  color: #000;
+  font-size: 1.0em;
+  padding: 20px;
+  text-align: center; }
+  .bhagaskara span {
+    color: #a6429a; }
+
+@media (min-width: 590px) {
+  .bhagaskara_footer {
+    font-size: 2em; } }
+
+/*# sourceMappingURL=style.css.map */

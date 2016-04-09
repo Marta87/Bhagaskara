@@ -1,0 +1,73 @@
+.numbers {
+  height: 500px;
+  width: auto;
+  padding: 15px 0;
+  background: $backgroundInfosNumbers;
+  .digits_caption {
+    margin-bottom: 25px;
+  }
+  @media (min-width: 800px) {
+    .digits_caption {
+      display: flex;
+      flex-direction: row;
+      margin: 0 auto;
+      justify-content: center;
+      margin-top: 50px;
+    }
+  }
+  .digits {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    color: $textColor;
+    padding-top: 25px;
+  }
+  @media (min-width: 800px) {
+    .digits {
+      font-size: 40px;
+      margin: 0 50px;
+    }
+  }
+  .caption {
+    font-size: 10px;
+    text-align: center;
+    padding-top: 5px;
+    color: $cyrcleColor;
+  }
+  @media (min-width: 800px) {
+    .caption {
+      font-size: 16px;
+    }
+  }
+  .circel_mini {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background: $cyrcleColor;
+    margin-top: 25px;
+    margin: 0 auto;
+  }
+  @media (min-width: 800px) {
+    .circel_mini {
+      height: 140px;
+      width: 140px;
+      margin-top: 50px;
+    }
+  }
+  .circle_caption {
+    width: 150px;
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 13px;
+    color: $cyrcleColor;
+  }
+  .circle_caption2 {
+    width: 150px;
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 9px;
+  }
+}
