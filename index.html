@@ -13,7 +13,7 @@
 
 <body>
   <!--header -->
-  <header class="header">
+  <header id="home" class="header">
     <div class="information">
       <p class="bhagaskara">Bhagas<span>kara</span>.</p>
       <h1>Fusce rutrum pretium lorem ipsum.</h1>
@@ -21,32 +21,32 @@
     </div>
     <div class="header_flex_box">
       <div class="frame section_down">
-        <a class="box-1" href="#">
+        <a class="box-1" href="#about-section">
           <p>About</p>
         </a>
       </div>
       <div class="frame section_down">
-        <a class="box-2" href="#">
+        <a class="box-2" href="#team-section">
           <p>Team</p>
         </a>
       </div>
       <div class="frame section2">
-        <a class="box-3" href="#">
+        <a class="box-3" href="#service-section">
           <p>Service</p>
         </a>
       </div>
       <div class="frame section2">
-        <a class="box-4" href="#">
+        <a class="box-4" href="#portfolio-section">
           <p>Portfolio</p>
         </a>
       </div>
       <div class="frame section_down">
-        <a class="box-5" href="#">
+        <a class="box-5" href="#blog-section">
           <p>Blog</p>
         </a>
       </div>
       <div class="frame section_down">
-        <a class="box-6" href="#">
+        <a class="box-6" href="#contact-section">
           <p>Contact</p>
         </a>
       </div>
@@ -54,23 +54,23 @@
     <div id="down"></div>
   </header>
   <!--nav -->
- <nav>
+  <nav>
     <div class="menu">
       <p class="bhagaskara bhagaskara_menu">Bhagas<span>kara</span>.</p>
       <p class="logo">Bhagas<span>kara</span>.</p>
       <ul>
-        <li><a src="#">HOME</a></li>
-        <li><a src="#">ABOUT</a></li>
-        <li><a src="#">TEAM</a></li>
-        <li><a src="#">SERVICES</a></li>
-        <li><a src="#">PORTFOLIO</a></li>
-        <li><a src="#">BLOG</a></li>
-        <li><a src="#">CONTACT</a></li>
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#about-section">ABOUT</a></li>
+        <li><a href="#team-section">TEAM</a></li>
+        <li><a href="#service-section">SERVICES</a></li>
+        <li><a href="#portfolio-section">PORTFOLIO</a></li>
+        <li><a href="#blog-section">BLOG</a></li>
+        <li><a href="#contact-section">CONTACT</a></li>
       </ul>
     </div>
   </nav>
   <!--sectionInfos -->
-  <section class="inf">
+  <section id="service-section" class="inf">
     <div class="infos">
       <div class="container">
         <a class="infos_box-1"></a>
@@ -95,7 +95,7 @@
     </div>
   </section>
   <!--sectionAbout -->
-  <section class="about">
+  <section id="about-section" class="about">
     <div class="bhagaskara section-header">
       <h2>About <span>us</span></h2></div>
     <div class="about_img"><img src="img/mockup.png"></div>
@@ -113,7 +113,7 @@
     </div>
   </section>
   <!--sectionTeam -->
-  <section class="team">
+  <section id="team-section" class="team">
     <div class="section-header">
       <h2>Our<span>team</span></h2></div>
     <div class="arr">
@@ -128,40 +128,40 @@
       <ul class="team_gallery">
         <li>
           <div><img class="foto" src="img/foto3.jpg">
-          <div class="name_box">
-            <p class="name">ANNE HATHAWAY</p>
-            <p>Ceo/Marketing Guru</p>
-          </div>
-            
-          <div class="social_media">
-            <div class="fb"></div>
-            <div class="google"></div>
-          </div>
+            <div class="name_box">
+              <p class="name">ANNE HATHAWAY</p>
+              <p>Ceo/Marketing Guru</p>
+            </div>
+
+            <div class="social_media">
+              <div class="fb"></div>
+              <div class="google"></div>
+            </div>
           </div>
         </li>
         <li>
           <div><img class="foto" src="img/foto2.jpg">
-          <div class="name_box">
-            <p class="name">ANNE HATHAWAY</p>
-            <p>Ceo/Marketing Guru</p>
+            <div class="name_box">
+              <p class="name">ANNE HATHAWAY</p>
+              <p>Ceo/Marketing Guru</p>
+            </div>
+            <div class="social_media">
+              <div class="fb"></div>
+              <div class="google"></div>
+            </div>
           </div>
-          <div class="social_media">
-            <div class="fb"></div>
-            <div class="google"></div>
-          </div>
-             </div>
         </li>
         <li>
           <div><img class="foto" src="img/foto1.jpg">
-          <div class="name_box">
-            <p class="name">ANNE HATHAWAY</p>
-            <p>Ceo/Marketing Guru</p>
+            <div class="name_box">
+              <p class="name">ANNE HATHAWAY</p>
+              <p>Ceo/Marketing Guru</p>
+            </div>
+            <div class="social_media">
+              <div class="fb"></div>
+              <div class="google"></div>
+            </div>
           </div>
-          <div class="social_media">
-            <div class="fb"></div>
-            <div class="google"></div>
-          </div>
-           </div>
         </li>
       </ul>
     </div>
@@ -205,7 +205,7 @@
     </div>
   </section>
   <!--sectionNumbers -->
-  <section class="numbers">
+  <section id="blog-section" class="numbers">
     <div class="digits_caption">
       <div class="digits">365
         <div class="caption">Lorem ipsum</div>
@@ -220,13 +220,37 @@
         <div class="caption">Lorem ipsum</div>
       </div>
     </div>
-    <div class="circel_mini"></div>
-    <div class="circle_caption">"Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum"</div>
-    <div class="circle_caption2">LESALE CHRISTOPER, PINTEREST</div>
-    <div></div>
+    <div class="window_circle">
+    <ul class="circle_menu">
+      <li class="circle1">
+        <div class="circel_mini"></div>
+        <div class="circle_caption">"Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum"</div>
+        <div class="circle_caption2">LESALE CHRISTOPER, PINTEREST</div>
+       
+      </li>
+      <li  class="circle2">
+        <div class="circel_mini"></div>
+        <div class="circle_caption">"Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum"</div>
+        <div class="circle_caption2">SARA, PINTEREST</div>
+       
+      </li>
+      <li>
+        <div class="circel_mini"></div>
+        <div class="circle_caption">"Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum"</div>
+        <div class="circle_caption2">HERMIONA, PINTEREST</div>
+      
+      </li>
+
+    </ul>
+      
+       <div class="baby_circle"></div>
+       <div class="baby_circle"></div>
+       <div class="baby_circle"></div>
+        
+</div>
   </section>
   <!--sectionPortfolio -->
-  <section class="portfolio">
+  <section id="portfolio-section" class="portfolio">
     <div class="section-header">
       <h2>Our <span>portfolio</span></h2></div>
     <ul class="portfolio_menu">
@@ -248,7 +272,7 @@
     </div>
   </section>
   <!--sectionContact -->
-  <section class="contact">
+  <section id="contact-section" class="contact">
     <div class="section-header">
       <h2>Get in touch</h2></div>
     <div class="form">
@@ -265,13 +289,13 @@
         <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis.</p>
         <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis.</p>
         <div class="social_media">
-        <div class="fb"></div>
-        <div class="tumb"></div>
-        <div class="google"></div>
+          <div class="fb"></div>
+          <div class="tumb"></div>
+          <div class="google"></div>
+        </div>
       </div>
     </div>
-      </div>
-      
+
   </section>
   <footer>
     <div class="bhagaskara bhagaskara_footer">Bhagas<span>kara</span>.</div>

@@ -4,11 +4,11 @@ $(function () {
   var button = $(".bhagaskara_menu");
 
   button.on("click", function () {
-    list.slideToggle();
-    button.slideToggle();
-  })
-
-  //Menu 
+      list.slideToggle();
+      button.slideToggle();
+    })
+  
+  
   //Menu 
   var nav = $("nav");
   var menu = $(".menu");
@@ -21,11 +21,7 @@ $(function () {
         
         $(".menu").toggleClass("sticky", scrollTop > scrollingStartDistance);
     });
-  
-  
-  
-  
-  //Slider
+    //Slider
   var next = $(".arr_r");
   var prev = $(".arr_l");
   var team_gallery = $(".team_gallery");
@@ -37,7 +33,7 @@ $(function () {
   team_gallery.css({
     width: "3000px"
   , });
-
+  
   next.on("click", function () {
     if (offset === 230) {
       offset = 0;
@@ -51,21 +47,21 @@ $(function () {
       });
     }
   });
-
+  
   next.on("click", function () {
-    if ($(window).width() > 800) {
-      if (offset === 400) {
-        offset = 0;
-        team_gallery.css({
-          "left": 0
-        });
-      } else {
-        offset += photoWidth;
-        team_gallery.css({
-          "left": -offset + 'px'
-        });
-      }
+   if($(window).width()>800){
+    if (offset === 400) {
+      offset = 0;
+      team_gallery.css({
+        "left": 0
+      });
+    } else {
+      offset += photoWidth;
+      team_gallery.css({
+        "left": -offset + 'px'
+      });
     }
+   }
   });
   prev.on("click", function () {
     if (offset === 0) {
@@ -80,24 +76,68 @@ $(function () {
       });
     }
   });
-
-  prev.on("click", function () {
-    if ($(window).width() > 800) {
+  
+    prev.on("click", function () {
+    if($(window).width()>800){
       if (offset === 0) {
-        offset = 400;
-        team_gallery.css({
-          "left": '-400px'
-        });
-      } else {
-        offset -= photoWidth;
-        team_gallery.css({
-          "left": -offset + 'px'
-        });
-      }
+      offset = 400;
+      team_gallery.css({
+        "left": '-400px'
+      });
+    } else {
+      offset -= photoWidth;
+      team_gallery.css({
+        "left": -offset + 'px'
+      });
+    }
     }
   });
 
-
+  
+  $("baby_circle_menu").on("click", ".circle", function(){
+    this.class().show();
+  })
+  
+  
+  
+  var li = $('.circle_menu li');
+    var divs = $('.baby_circle')
+    
+    for(var i = 0; i < li.length; i++){
+        $(li[i]).addClass("li"+ [i]);
+        $(divs[i]).addClass("li"+ [i]);
+    }
+    
+//Zadanie 3
+  /*  
+    li.on('click', function(){
+         console.log('Działa');
+  });
+  */
+//Zadanie 4 
+      li.hide();
+    divs.on("click", function(){
+  
+        $("ul li." + $(this).attr("class")).fadeToggle(300);// div o klasie + li atrybut klasa
+    });
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 
 
   //Portfolio

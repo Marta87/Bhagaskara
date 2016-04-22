@@ -39,6 +39,21 @@
       font-size: 16px;
     }
   }
+  .window_circle {
+    overflow: hidden;
+    width: 140px;
+    margin: 0 auto;
+  }
+  .circle_menu {
+    width: 2000px;
+    position: relative;
+    display: inline-block;
+    transition: all .5s ease-in-out;
+  }
+  .circle_menu li {
+    width: 140px;
+    display: inline-block;
+  }
   .circel_mini {
     height: 80px;
     width: 80px;
@@ -69,5 +84,18 @@
     margin-top: 10px;
     text-align: center;
     font-size: 9px;
+  }
+ 
+  .baby_circle {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 1px solid #aaa;
+    display: inline-block;
+    margin: 10px auto;
+    margin-left:  15px;
+    &:hover{
+      background: #aaa;
+    }
   }
 }

@@ -235,14 +235,21 @@ nav {
     top: 0;
     left: 0;
     z-index: 999;
-    height: 50px;
+    height: 45px;
     width: 100%;
     padding: 10px 0;
     background: #fff; }
+  @media (min-width: 423px) {
+    nav .sticky {
+      height: 35px; } }
+  @media (min-width: 580px) {
+    nav .sticky {
+      padding-top: 3px; } }
   nav .bhagaskara {
     font-family: "existencelight";
     padding: 0 10px;
-    text-align: left; }
+    text-align: left;
+    margin-top: 5px; }
     nav .bhagaskara span {
       color: #a6429a; }
   @media (min-width: 580px) {
@@ -282,6 +289,9 @@ nav {
     font-size: 12px; }
     nav ul li:hover {
       color: #a6429a; }
+    nav ul li a {
+      text-decoration: none;
+      color: #000; }
 
 .inf {
   height: 1050px;
@@ -291,7 +301,8 @@ nav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center; }
+    justify-content: center;
+    padding-top: 28px; }
     .inf .infos .container {
       text-align: center;
       margin: 0 auto;
@@ -374,7 +385,8 @@ nav {
   .about .bhagaskara {
     font-family: "existencelight";
     font-size: 18px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    padding-top: 25px; }
   .about .section-header h2 {
     font-size: 40px;
     margin-top: 20px; }
@@ -454,11 +466,12 @@ nav {
       color: #fff; }
 
 .team {
-  height: 450px; }
+  height: 600px; }
   .team .section-header {
     font-family: "existencelight";
     font-size: 18px;
-    margin: 40px 0; }
+    margin: 40px 0;
+    padding-top: 45px; }
     .team .section-header h2 {
       font-size: 40px; }
       .team .section-header h2 span {
@@ -644,6 +657,18 @@ nav {
   @media (min-width: 800px) {
     .numbers .caption {
       font-size: 16px; } }
+  .numbers .window_circle {
+    overflow: hidden;
+    width: 140px;
+    margin: 0 auto; }
+  .numbers .circle_menu {
+    width: 2000px;
+    position: relative;
+    display: inline-block;
+    transition: all .5s ease-in-out; }
+  .numbers .circle_menu li {
+    width: 140px;
+    display: inline-block; }
   .numbers .circel_mini {
     height: 80px;
     width: 80px;
@@ -670,6 +695,16 @@ nav {
     margin-top: 10px;
     text-align: center;
     font-size: 9px; }
+  .numbers .baby_circle {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 1px solid #aaa;
+    display: inline-block;
+    margin: 10px auto;
+    margin-left: 15px; }
+    .numbers .baby_circle:hover {
+      background: #aaa; }
 
 .portfolio {
   height: auto;
@@ -677,7 +712,8 @@ nav {
   .portfolio .section-header {
     font-family: "existencelight";
     font-size: 18px;
-    margin: 40px 0; }
+    margin: 40px 0;
+    padding-top: 35px; }
     .portfolio .section-header h2 {
       font-size: 40px; }
       .portfolio .section-header h2 span {

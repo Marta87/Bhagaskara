@@ -1,10 +1,11 @@
 .team {
-  height: 450px;
+  height: 600px;
   .section-header {
     @extend %variabels;
     font-family: "existencelight";
     font-size: 18px;
     margin: 40px 0;
+    padding-top: 45px;
     h2 {
       font-size: 40px;
       span {
