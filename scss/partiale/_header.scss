@@ -1,8 +1,3 @@
-%text_position {
-  margin: 0 auto;
-  max-width: 90%;
-}
-
 .header {
   min-height: 100vh;
   height: auto;
@@ -22,11 +17,12 @@
     span {
       color: rgb(166, 66, 154);
     }
-  }  @media ( min-width: 780px){
-     .bhagaskara{
+  }
+  @media ( min-width: 780px) {
+    .bhagaskara {
       font-size: 5em;
-       padding-top: 60px;
-     }
+      padding-top: 60px;
+    }
   }
   h1 {
     position: relative;
@@ -35,12 +31,12 @@
     font-size: 2em;
     color: #fff;
   }
-    @media ( min-width: 780px){
-     h1{
+  @media ( min-width: 780px) {
+    h1 {
       font-size: 2.6em;
-       margin-top: -35px;
-       margin-bottom: -15px;
-     }
+      margin-top: -35px;
+      margin-bottom: -15px;
+    }
   }
   h2 {
     display: none;
@@ -73,11 +69,11 @@
       background-image: url(../img/portbg.png);
     }
   }
-    @media ( min-width: 900px){
-     .frame{
-       height: 150px;
-    width: 150px;
-     }
+  @media ( min-width: 900px) {
+    .frame {
+      height: 150px;
+      width: 150px;
+    }
   }
   [class*='box-'] {
     display: block;
@@ -100,12 +96,11 @@
       background-repeat: no-repeat;
       background-size: cover;
     }
-     @media ( min-width: 900px){
-     &:before{
-      top: 29%;
-     }
-  }
-    
+    @media ( min-width: 900px) {
+      &:before {
+        top: 29%;
+      }
+    }
     p {
       display: block;
       position: relative;
@@ -113,14 +108,13 @@
       margin: 12px 0;
       text-align: center;
     }
-        @media ( min-width: 900px){
-     p{
-      margin: 25px 0;
-       font-size: 18px;
-     }
+    @media ( min-width: 900px) {
+      p {
+        margin: 25px 0;
+        font-size: 18px;
+      }
+    }
   }
-  }
-  
   .box-2 {
     &:before {
       background-position: 0 -36px;
@@ -163,9 +157,9 @@
       margin-top: 20px;
     }
   }
-   @media ( min-width: 780px){
-     .section_down{
+  @media ( min-width: 780px) {
+    .section_down {
       margin-top: 170px;
-     }
+    }
   }
 }

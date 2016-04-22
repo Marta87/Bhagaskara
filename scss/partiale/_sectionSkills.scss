@@ -1,20 +1,20 @@
-.skills{
+.skills {
   height: 400px;
   margin-top: 100px;
-  .section-header{
+  .section-header {
     @extend %variabels;
     font-family: "existencelight";
     font-size: 18px;
     margin: 55px 0;
     text-align: center;
-    h2{
+    h2 {
       font-size: 40px;
-      span{
+      span {
         color: $KaraColor;
       }
     }
   }
-  .ability{
+  .ability {
     width: auto;
     height: 45px;
     font-family: 'Lato', sans-serif;
@@ -22,65 +22,63 @@
     font-size: 15px;
     margin: 10px 0;
     text-align: center;
-  }   @media (min-width: 800px){
-    .ability{
-        margin: 15px 40px;
   }
-     }
-
-  [class*="procent_"]{
-      width: 10px;
-      color: #cdcdcd;
-      text-align: right;
+  @media (min-width: 800px) {
+    .ability {
+      margin: 15px 40px;
     }
-  .ability_color{
-        margin: 9px auto;
+  }
+  [class*="procent_"] {
+    width: 10px;
+    color: #cdcdcd;
+    text-align: right;
+  }
+  .ability_color {
+    margin: 9px auto;
     height: 15px;
     width: 200px;
     //display: inline-block;
     background: #cdcdcd;
-    [class*='procent-']{
-       background: $KaraColor;
-       height: 15px;
-      }
+    [class*='procent-'] {
+      background: $KaraColor;
+      height: 15px;
     }
-      @media (min-width: 800px){
-    .ability_color{
-//       margin: -30px -201px;
   }
-     }
-    .procent_1{
-      padding-left: 76px;
+  @media (min-width: 800px) {
+    .ability_color {
+      //       margin: -30px -201px;
     }
-    .procent_2{
-      padding-left: 45px;
-    }
-    .procent_3{
-      padding-left: 93px;
-    }
-    .procent_4{
-      padding-left: 121px;
-    }
-    .procent-1{
-      width: 180px;
-    }
-    .procent-2{
-      width: 140px;
-    }
-    .procent-3{
-      width: 155px;
-    }
-    .procent-4{
-      width: 175px;
-    }
-  @media (min-width: 800px){
-    .flex_on_800px{
+  }
+  .procent_1 {
+    padding-left: 76px;
+  }
+  .procent_2 {
+    padding-left: 45px;
+  }
+  .procent_3 {
+    padding-left: 93px;
+  }
+  .procent_4 {
+    padding-left: 121px;
+  }
+  .procent-1 {
+    width: 180px;
+  }
+  .procent-2 {
+    width: 140px;
+  }
+  .procent-3 {
+    width: 155px;
+  }
+  .procent-4 {
+    width: 175px;
+  }
+  @media (min-width: 800px) {
+    .flex_on_800px {
       display: flex;
-  flex-direction:row;
-  margin: 0 auto;
-     justify-content:  center;
-     
+      flex-direction: row;
+      margin: 0 auto;
+      justify-content: center;
     }
   }
-
 }

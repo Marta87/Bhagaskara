@@ -14,14 +14,13 @@ nav {
     padding: 10px 0;
     background: $backgroundColorNav;
   }
-  @media (min-width: 423px){
-    .sticky{
+  @media (min-width: 423px) {
+    .sticky {
       height: 35px;
-     
     }
   }
-  @media (min-width: 580px){
-    .sticky{
+  @media (min-width: 580px) {
+    .sticky {
       padding-top: 3px;
     }
   }
@@ -29,7 +28,7 @@ nav {
     font-family: "existencelight";
     padding: 0 10px;
     text-align: left;
-        margin-top: 5px;
+    margin-top: 5px;
     span {
       color: $KaraColor;
     }

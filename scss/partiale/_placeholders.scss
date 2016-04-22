@@ -27,6 +27,11 @@
   }
 }
 
+%text_position {
+  margin: 0 auto;
+  max-width: 90%;
+}
+
 %header_flex_box {
   display: flex;
   flex-direction: row;
@@ -60,4 +65,3 @@
   color: #fff;
   margin: 0 auto;
 }
-

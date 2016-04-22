@@ -67,6 +67,10 @@ table {
       right: 0;
       top: 0; }
 
+.header h2 {
+  margin: 0 auto;
+  max-width: 90%; }
+
 .backgroundImg .header_flex_box {
   display: flex;
   flex-direction: row;
@@ -100,10 +104,6 @@ body {
 @font-face {
   font-family: "existencelight";
   src: local("existencelight"), url("../font/existence-light.woff") format("woff"); }
-.header h2 {
-  margin: 0 auto;
-  max-width: 90%; }
-
 .header {
   min-height: 100vh;
   height: auto;
